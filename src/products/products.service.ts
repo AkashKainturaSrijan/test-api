@@ -10,8 +10,8 @@ export class ProductsService {
 
   async getProduct(id): Promise<any> {
     return await axios.get('https://dummyjson.com/products/1');
-    //   .then((res) => res.json())
-    //   .then(console.log);
+      .then((res) => res.json())
+      .then(console.log);
   }
 
   async addProduct(product): Promise<any> {
